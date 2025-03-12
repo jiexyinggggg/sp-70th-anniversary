@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/milestones.css">
+    <script src="../js/milestones.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+
+<!-- Start of Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-4" href="https://www.sp.edu.sg/sp70">
+            <img src="../images/sp70_navbar_logo.png" alt="SP70 Logo" class="img-fluid logo-image"> <!-- Image taken from: https://www.sp.edu.sg/images/default-source/default-album/sp70-logo-550px.jpg -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto pe-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/milestones.html">Milestones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/form.html">Messages</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End of Navigation Bar -->
+
+<!-- Page content starts after the fixed navbar -->
+<div class="mt-5 pt-5"></div>
+
+<!-- Scroll to Top Button -->
+<button type="button" class="btn btn-secondary position-fixed bottom-0 end-0 mb-3 me-3" id="scrollToTopBtn">
+    <span class="d-flex align-items-center">
+        <span class="me-2">Back To Top</span>
+        <i class="bi bi-arrow-up"></i>
+    </span>
+</button>
+
+<!-- Start of Offcanvas Menu -->
+<div class="offcanvas offcanvas-start bg-dark text-white custom-width" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <a href="https://www.sp.edu.sg/">
+            <img src="../images/offcanvas_and_footer_sp_logo.png" alt="Logo" class="img-fluid logo-size">
+        </a>
+        <!-- Image taken from: https://www.sp.edu.sg/images/default-source/default-album/sp-logo-footer.png?sfvrsn=59de64e6_4 -->
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill me-2" viewBox="0 0 16 16">
+                        <path d="M8.354 1.146a.5.5 0 0 1 .292.103l6 5A.5.5 0 0 1 14.5 7.5H13v5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3H7v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-5H1.5a.5.5 0 0 1-.646-.793l6-5a.5.5 0 0 1 .5 0zM7.5 10v4h1v-4h-1z"/>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="../html/milestones.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill me-2" viewBox="0 0 16 16">
+                        <path d="M14.778 2.257a.5.5 0 0 0-.5-.514h-8.18a1.5 1.5 0 0 1-1.1-.407L4.1.564A1.5 1.5 0 0 0 3.002 0H2.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 1 0V8.514h.748l.498.58c.184.214.453.343.754.342h8.78a.5.5 0 0 0 .5-.514L14.778 2.257zM2.5 1h.501a.5.5 0 0 1 .374.18l.498.58H2.5V1z"/>
+                    </svg>
+                    Milestones
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="../html/form.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill me-2" viewBox="0 0 16 16">
+                        <path d="M2 15.5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.5a1 1 0 0 1-1 1H6.414L4.707 13.707a1 1 0 0 1-1.414 0L2 15.5zm4-10.5a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                    </svg>
+                    Messages
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- End of Offcanvas Menu -->
+
+<!-- Start of Carousel -->
+<div id="specificCarousel" class="carousel slide container-fluid p-0" data-bs-ride="carousel" data-bs-interval="5000">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#specificCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#specificCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+
+    <!-- Carousel Items -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../images/milestones_carousel.jpg" class="d-block carou-img" alt="First slide">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="text-light fw-bold text-center">SP's Achievements and Future Plans</h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../images/milestones_carousel_2.jpg" class="d-block carou-img" alt="Second slide">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="text-light fw-bold text-center">SP's Achievements and Future Plans</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#specificCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#specificCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- End of Carousel -->
+
+<!-- Start of SP's Achievements and Future Plans -->
+<div class="container-fluid p-3 text-dark text-center">
+    <!-- Navigation Tabs Section -->
+    <div id="navTabs" class="container-fluid py-3 mb-0">
+        <h2 class="text-center">SP's Achievements and Future Plans</h2>
+        <br>
+        <!-- Achievements and Future Plans Tabs -->
+        <ul class="nav nav-tabs justify-content-center" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active text-dark" data-bs-toggle="tab" href="#achievements" aria-selected="true" role="tab">Achievements</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-dark" data-bs-toggle="tab" href="#future-plans" aria-selected="false" role="tab">Future Plans</a>
+            </li>
+        </ul>
+
+        <!-- Achievements Tab Content Section -->
+        <div class="tab-content mt-3">
+            <!-- Achievements Tab Content -->
+            <div class="tab-pane fade show active" id="achievements" role="tabpanel">
+                <!-- Animated Banner Section -->
+                <div class="container-fluid p-0 position-relative">
+                    <!-- Video Background -->
+                    <video class="w-100" autoplay muted loop playsinline>
+                        <source src="../videos/animated_achievements_banner.mp4" type="video/mp4">
+                        <!-- Video taken from: https://www.sp.edu.sg/videos/default-source/comms/sp-esg_banner-3-digitized-animated-2.mp4 -->
+                    </video>
+                    <!-- Banner Content -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                        <div class="text-center">
+                            <h2 class="text-dark">Achievements</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Success Stories Carousel -->
+                <div class="container mt-4">
+                    <h2 class="text-center mb-4">Student Success Stories</h2>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" style="overflow: visible;">
+
+
+                            <!-- First Slide -->
+                            <div class="carousel-item active">
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                                    <!-- Card 1 -->
+                                    <div class="col">
+                                        <div class="card h-100 custom-card">
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <a href="https://www.sp.edu.sg/sp/why-sp/student-success-stories/liewzhengjie">
+                                                    <img src="../images/liew-zheng-jie.jpg" class="rounded-circle image-profile" alt="Card Image" data-bs-toggle="tooltip" title="Zheng Jie">
+                                                    <!-- Image taken from: https://www.sp.edu.sg/images/default-source/content-migration/news-liewzhengjie.jpg?sfvrsn=e981cabf_2 -->
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">From trouble to model student</h5>
+                                                <p class="card-text">
+                                                    Liew Zheng Jie turned his life around in upper secondary school after struggling with truancy and discipline in his earlier years. His role as a class representative motivated him to excel in science, design, and technology. At Singapore Polytechnic, he participated in a research attachment in New Zealand and worked on a project using bio-absorption to extract heavy metals from water. He aspires to study Chemical Engineering at the National University of Singapore under the Global Merit Scholarship, aiming to develop new sources of clean energy.</p>
+                                                <p class="card-text text-start"><small class="text-muted">2017, Liew Zheng Jie</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 2 -->
+                                    <div class="col">
+                                        <div class="card h-100 custom-card">
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2018/lee-wen-wei">
+                                                    <img src="../images/lee-wen-wei.jpg" class="rounded-circle image-profile" alt="Card Image" data-bs-toggle="tooltip" title="Wen Wei">
+                                                    <!-- Image taken from: https://www.sp.edu.sg/images/default-source/sp-main/successful-graduates/lee-wen-wei_200px.jpg?sfvrsn=e7b47819_2 -->
+                                                </a>                            
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Dad lights up his future</h5>
+                                                <p class="card-text">
+                                                    Lee Wen Wei’s interest in gadgets, sparked by his electrical engineer father, led him to build an automatic lighting system. Inspired by SP’s Engineering facilities during a New Town Secondary School programme, he pursued a Diploma in Electrical & Electronic Engineering at SP. During an internship at the Land Transport Authority, he improved data management applications and assisted with train tests. Wen Wei, who refurbished old computers for needy families and led NYAA initiatives, has been accepted by Nanyang Technological University to study Electrical & Electronic Engineering and now manages a 3D printing business.</p>
+                                                <p class="card-text text-start"><small class="text-muted">2018, Lee Wen Wei</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 3 -->
+                                    <div class="col">
+                                        <div class="card h-100 custom-card">
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2019/songkiat-ow-shiyuan">
+                                                    <img src="../images/songkiat.jpg" class="rounded-circle image-profile" alt="Card Image" data-bs-toggle="tooltip" title="Songkiat">
+                                                    <!-- Image taken from: https://www.sp.edu.sg/images/default-source/sp-main/successful-graduates/songkiat-headshot.jpg?sfvrsn=62060e77_0 -->
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">It’s NOT The End</h5>
+                                                <p class="card-text">
+                                                    Songkiat Ow Shiyuan, despite skepticism for attending ITE after poor PSLE results, excelled in Chemical Process Technology with a perfect GPA. Inspired by SP’s facilities, he pursued a Diploma in Chemical Engineering. As Vice-President of the DCHE Student Chapter and a leader in SP’s Rotaract Club, he led mentoring programs and community events. His final-year project at A*STAR focused on improving Solar Cell technology, and an internship at Nestle Singapore honed his skills, leading him to be accepted into Chemical Engineering programs at NUS and NTU with goals of becoming a process engineer and ITE lecturer.</p>
+                                                <p class="card-text text-start"><small class="text-muted">2019, Songkiat Ow Shiyuan</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Second Slide -->
+                            <div class="carousel-item">
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                                    <!-- Card 4 -->
+                                    <div class="col">
+                                        <div class="card h-100 custom-card">
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2020/james-lim-en-hui">
+                                                    <img src="../images/james-lim-en-hui.jpg" class="rounded-circle image-profile" alt="Card Image" data-bs-toggle="tooltip" title="James">
+                                                    <!-- Image taken from: https://www.sp.edu.sg/images/default-source/graduation-2020/james.tmb-thumb200.jpg?Culture=en&sfvrsn=fd759274_1 -->
+                                                </a>                            
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Kickstarting His Technopreneur Dream</h5>
+                                                <p class="card-text">
+                                                    At age seven, James Lim En Hui began programming in C# and JavaScript, creating games. Encouraged by a teacher, he joined Singapore Polytechnic's DMIT to advance his tech skills. As president of the SP iEXCEL Club, he earned accolades such as the SiTF Best Student Project and Microsoft Imagine Cup Singapore. His final-year project, an AI-driven chatbot for Standard Chartered Bank, led to offers from NUS, NTU, and SMU, showcasing his exceptional expertise, innovation, dedication, and passion for technology, problem-solving, and leadership.</p>
+                                                <p class="card-text text-start"><small class="text-muted">2020, James Lim En Hui</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 5 -->
+                                    <div class="col">
+                                        <div class="card h-100 custom-card">
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2021/chua-min-min">
+                                                    <img src="../images/chua-min-min.jpg" class="rounded-circle image-profile" alt="Card Image" data-bs-toggle="tooltip" title="Min Min">
+                                                    <!-- Image taken from: https://www.sp.edu.sg/images/default-source/grad-2021/min-min.tmb-thumb200.jpg?Culture=en&sfvrsn=aba17e9f_1 -->
+                                                </a>                            
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Who Says Females Can’t Thrive In IT?</h5>
+                                                <p class="card-text">
+                                                    Chua Min Min’s interest in cybersecurity was sparked by a Korean drama, shifting her from accountancy. Encouraged by her secondary school teacher, she pursued Singapore Polytechnic’s Diploma in Infocomm Security Management (DISM) and thrived. She excelled in her final-year project with DSO National Laboratories and secured a full-time offer from Assure IT Pte Ltd. Min Min also participated in IT events like Black Hat Asia 2019, mentored peers, and will continue her studies in computer science with a business minor at Nanyang Technological University.</p>
+                                                <p class="card-text text-start"><small class="text-muted">2021, Chua Min Min</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 6 -->
+                                    <div class="col">
+                                        <div class="card h-100 custom-card">
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2022/lee-jing-yang-gabriel">
+                                                    <img src="../images/lee-jing-yang-gabriel.jpg" class="rounded-circle image-profile" alt="Card Image" data-bs-toggle="tooltip" title="Gabriel">
+                                                    <!-- Image taken from: https://www.sp.edu.sg/images/default-source/default-album/gabriel-2.jpg?sfvrsn=7837fcb5_0 -->
+                                                </a>                            
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Who Says Home-Schoolers are Anything but Successful?</h5>
+                                                <p class="card-text">Home-schooled for 12 years, Lee Jing Yang Gabriel developed his engineering passion through self-learning and electronics experiments. At nine, he began dismantling appliances and building flashlights, leading to Singapore Polytechnic’s Common Engineering Programme and the Diploma in Electrical and Electronic Engineering. Gabriel excelled, winning a Gold Medal in Industrial Control at WorldSkills Singapore 2021 and gaining experience at DSO National Laboratories. Committed to volunteering since age 12, he aims to become a defence engineer at DSO.</p>
+                                                <p class="card-text text-start"><small class="text-muted">2022, Lee Jin Yang Gabriel</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                 
+                            
+                            <!-- Third Slide -->
+                            <div class="carousel-item">
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                                    <!-- Card 7 -->
+                                    <div class="col">
+                                        <div class="card h-100 custom-card">
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2023/alwis-lim-wei-yao">
+                                                    <img src="../images/alwis-lim-wei-yao.jpg" class="rounded-circle image-profile" alt="Card Image" data-bs-toggle="tooltip" title="Alwis">
+                                                    <!-- Image taken from: https://www.sp.edu.sg/images/default-source/default-album/alwis8c70e29e2cdd4705802d65a7b5c60810.jpg?sfvrsn=c5ada58b_0 -->
+                                                </a>                            
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">A digital steward who serves the community</h5>
+                                                <p class="card-text">
+                                                    Alwis, a Chung Cheng High School (Yishun) alumnus, pursued technology despite initial hesitance from his parents. He won an international coding contest by Google and chose Singapore Polytechnic's Diploma in Infocomm Security Management (DISM). Active in community service, he organized digital literacy workshops for disadvantaged children, earning the National Young Leader Award in 2021, and interned with GovTech on malware analysis and cybersecurity. After National Service, Alwis plans to study Computer Science and Business in the U.S.</p>
+                                                <p class="card-text text-start"><small class="text-muted">2022, Lee Jin Yang Gabriel</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 8 -->
+                                    <div class="col">
+                                        <div class="card h-100 custom-card">
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/kenneth-chen-ko-han">
+                                                    <img src="../images/kenneth-chen-ko-han.png" class="rounded-circle image-profile" alt="Card Image" data-bs-toggle="tooltip" title="Kenneth">
+                                                    <!-- Image taken from: https://www.sp.edu.sg/images/default-source/grad-2024/graduation-2024-homepage/kenneth-sp-graduation-2024.png?sfvrsn=7120a4b6_1 -->
+                                                </a>                            
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Empowering people with AI technology</h5>
+                                                <p class="card-text">
+                                                    Inspired by superheroes, Kenneth Chen Ko Han began programming at 11, modifying his Minecraft character and developing an interest in AI. He chose Singapore Polytechnic’s Diploma in Applied AI and Analytics (DAAA) for its curriculum. Kenneth won the Champion title at GovTech's GeekOut! Bootcamp in 2022 and placed 17th in TCS CodeVita. At SP, he founded the Competitive Programmers branch, organized AI hackathons, and developed AI solutions during his GovTech internship. Kenneth plans to intern with Bifrost AI and continue studying Data Science and AI.</p>
+                                                <p class="card-text text-start"><small class="text-muted">2024, Kenneth Chen Ko Han</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 9 -->
+                                    <div class="col">
+                                        <div class="card h-100 custom-card">
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/nicholas-sim-jing-xiang">
+                                                    <img src="../images/nicholas-sim-jing-xiang.png" class="rounded-circle image-profile" alt="Card Image" data-bs-toggle="tooltip" title="Nicholas">
+                                                    <!-- Image taken from: https://www.sp.edu.sg/images/default-source/grad-2024/graduation-2024-homepage/nicholas-sp-graduation-2024.png?sfvrsn=8ab4717c_1 -->
+                                                </a>                            
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">An aspiring food technologist with a hunger to give back to society</h5>
+                                                <p class="card-text">
+                                                    Nicholas Sim Jing Xiang, a Catholic High School alumnus, retook his GCE 'A' Levels twice during National Service. He enrolled in Singapore Polytechnic’s Diploma in Food Science and Technology (DFST), inspired by a project on elderly nutrition. At SP, he excelled academically, won the Lee Kuan Yew Award, and was active in the Chemical and Life Sciences Club. His projects included studying yoghurt flavor with Symrise and interning with Tai Hua Food Industries. Through volunteering with TOUCH Meals-on-Wheels, he aims to develop cost-effective, sustainable meals.</p>
+                                                <p class="card-text text-start"><small class="text-muted">2024, Nicholas Sim Jing Xiang</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev position-absolute top-50 leftposition translate-middle-y" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="bi bi-arrow-left text-dark fs-3" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next position-absolute top-50 rightposition translate-middle-y" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="bi bi-arrow-right text-dark fs-3" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!-- Future Plans Tab Content Section -->
+        <div class="tab-content mt-3">
+            <!-- Future Plans Tab Content -->
+            <div class="tab-pane fade" id="future-plans" role="tabpanel">
+                <!-- Animated Banner Section -->
+                <div class="container-fluid p-0 position-relative">
+                    <!-- Video Background -->
+                    <video class="w-100" autoplay muted loop playsinline>
+                        <source src="../videos/animated_future_plans_banner.mp4" type="video/mp4">
+                        <!-- Video taken from: https://www.sp.edu.sg/videos/default-source/comms/sp-esg_banner-3-digitized-animated-2.mp4 -->
+                    </video>
+                    <!-- Banner Content -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                        <div class="text-center">
+                            <h2 class="text-dark">Aspirations</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Start of Future Plans Container-->
+                <div class="container py-0">
+
+                <!-- Aspirations Table -->
+                    <div class="container mt-3">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-primary text-center" id="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>SP's Aspirations</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>SP's 60-30 Vision</td>
+                                        <td>SP’s 60-30 Vision is to reduce our greenhouse gas emissions by 60% by 2030, from the baseline year of 2022. This target is a key component of SP's broader commitment to enhancing environmental sustainability and addressing climate change.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>SP's Net Zero Sustainability Roadmap</td>
+                                        <td>SP plans to develop a Net Zero Sustainability Roadmap by 2024, aiming to significantly reduce its carbon footprint and enhance environmental sustainability across its campus operations. This initiative is part of SP's broader commitment to addressing climate change and promoting sustainable practices.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>SP's Industry 4.0</td>
+                                        <td>The Industry 4.0 solutions being developed by Singapore Polytechnic (SP) and its partners, including 5G technologies, are specifically aimed at small and medium-sized enterprises (SMEs). The goal is to help these businesses implement smart and sustainable practices to enhance their operations and competitiveness.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>SP's Development of New Research Facilities</td>
+                                        <td>SP’s plans in development of new research facilites focus on leveraging digital innovation and strategic partnerships to enhance industry practices. By integrating advanced technologies like AI and data analytics, SP aims to support business growth and drive progress in the digital economy.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                   </div>
+
+                    <!-- 1st Row -->
+                    <div class="row mb-4">
+                        <div class="col-md-6 d-flex justify-content-start">
+                            <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters#:~:text=SP's%2060%2D30%20Vision%20is,the%20baseline%20year%20of%202022." target="_blank">
+                                <img src="../images/go_green_sp.jpg" class="img-fluid hover-effect" alt="Go Green SP">
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <h3 class="text-dark">SP's 60-30 Vision</h3>
+                            <p>Singapore Polytechnic's 60-30 Vision is a comprehensive sustainability initiative aimed at reducing greenhouse gas emissions by 60% by 2030, compared to 2022 levels. As part of this vision, SP also plans to increase its use of renewable energy by 30% by the same year. This dual approach reflects the institution’s commitment to environmental stewardship and aligns with global efforts to combat climate change. By integrating green practices and promoting cleaner energy, SP seeks to set a benchmark for sustainability and inspire others to follow suit.</p>
+                            <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters#:~:text=SP's%2060%2D30%20Vision%20is,the%20baseline%20year%20of%202022." target="_blank">
+                                <button class="btn btn-primary">Find Out More</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 2nd Row -->
+                    <div class="row mb-4">
+                        <div class="col-md-6 order-md-2 d-flex justify-content-end">
+                            <a href="https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-to-partner-with-kpmg-to-develop-blueprint-for-net-zero-sustainability-roadmap" target="_blank">
+                                <img src="../images/sp_campus_in_a_garden.jpg" class="img-fluid hover-effect" alt="SP Campus in a Garden">
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <h3 class="text-dark">SP's Net Zero Sustainability Roadmap</h3>
+                            <p>Singapore Polytechnic has formed a partnership with KPMG to develop a blueprint for a net-zero sustainability roadmap. This collaboration aims to create a strategic plan that will guide SP in achieving net-zero carbon emissions and enhance its sustainability efforts. By leveraging KPMG's expertise, the partnership seeks to establish a comprehensive framework for reducing environmental impact and fostering long-term sustainability. The initiative reflects SP's commitment to leading by example in environmental responsibility and supporting broader climate goals.</p>
+                            <a href="https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-to-partner-with-kpmg-to-develop-blueprint-for-net-zero-sustainability-roadmap" target="_blank">
+                                <button class="btn btn-primary">Find Out More</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 3rd Row -->
+                    <div class="row mb-4">
+                        <div class="col-md-6 d-flex justify-content-start">
+                            <a href="https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-and-partners-to-lead-industry-4.0-solutions-for-smes-to-develop-smart-and-sustainable-businesses" target="_blank">
+                                <img src="../images/sp_industry_4.0.jpg" class="img-fluid hover-effect" alt="SP Industry 4.0">
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <h3 class="text-dark">SP's Industry 4.0</h3>
+                            <p>Singapore Polytechnic and its partners are spearheading Industry 4.0 solutions to help small and medium-sized enterprises (SMEs) transition to smart and sustainable business models. They aim to support SMEs in leveraging advanced technologies to enhance productivity and sustainability. The collaboration includes the development of smart technologies and digital tools tailored to the needs of SMEs. This initiative focuses on integrating innovations such as data analytics, artificial intelligence, and the Internet of Things. SP and its partners are providing resources, expertise, and guidance to facilitate this technological transformation. The effort is part of a broader strategy to foster industry innovation and sustainability in Singapore. By adopting these solutions, SMEs can improve operational efficiency and contribute to a greener economy.</p>
+                            <a href="https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-and-partners-to-lead-industry-4.0-solutions-for-smes-to-develop-smart-and-sustainable-businesses" target="_blank">
+                                <button class="btn btn-primary">Find Out More</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 4th Row -->
+                        <div class="row mb-4">
+                            <div class="col-md-6 order-md-2 d-flex justify-content-end">
+                                <a href="https://www.sp.edu.sg/industry/tie" target="_blank">
+                                    <img src="../images/sp_technology_innovation_enterprise.png" class="img-fluid hover-effect" alt="SP Technology Innovation Enterprise">
+                                </a>
+                            </div>
+                            <div class="col-md-6 d-flex flex-column justify-content-center">
+                                <h3 class="text-dark">SP's Development of New Research Facilities</h3>
+                                <p>Singapore Polytechnic plans to and has been actively developing new research facilities in the following areas:<br>
+                                    1. Advanced Manufacturing Centre<br>
+                                    2. Energy and Chemicals Research<br>
+                                    3. Integrated Food Innovation Centre<br>
+                                    4. Digital Transformation and Cybersecurity<br>
+                                    5. Health and Biomedical Sciences<br>
+                                    6. Sustainable Urban Solutions<br>
+                                    7. AI and Data Science<br>
+                                    8. Green Energy Solutions<br>
+                                    9. Entrepreneurship Hub<br>
+                                    10. Industry Partnerships<br>
+                                    These developments aim to support advanced research and innovation, catering to both academic and industry needs.</p>
+                                <a href="https://www.sp.edu.sg/industry/tie" target="_blank">
+                                    <button class="btn btn-primary">Find Out More</button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Custom Divider -->
+                        <div class="d-flex justify-content-center my-4">
+                            <div class="custom-divider"></div>
+                        </div>
+
+                        <!-- Quote -->
+                        <div class="container d-flex flex-column align-items-center">
+                            <div class="text-center">
+                              <i class="bi bi-quote fs-1 d-block mb-2"></i>
+                              <p class="fst-italic fs-4 fw-bold mx-3 mb-0">
+                                “It's So Possible with Singapore's First Poly”
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+<!-- End of SP's Achievements and Future Plans -->
+
+<!-- Start of footer -->
+<footer class="bg-dark text-white py-4 mt-0">
+    <div class="container">
+        <div class="row">
+            <!-- SP Logo and Copyright -->
+            <div class="col-12 col-md-4 col-lg-3 text-center mb-4 mb-md-0 d-flex align-items-center justify-content-center" style="height: 100px;"> <!-- Adjust height as needed -->
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <!-- SP Logo -->
+                    <a href="https://www.sp.edu.sg/">
+                        <img src="../images/offcanvas_and_footer_sp_logo.png" alt="SP Logo" class="img-fluid mt-1 w-50">
+                    </a>
+                    <!-- Image taken from: https://www.sp.edu.sg/images/default-source/default-album/sp-logo-footer.png?sfvrsn=59de64e6_4 -->
+                    <!-- Copyright -->
+                    <span class="mt-2">© 2024 Yip Jayying</span>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-12 col-md-8 col-lg-6 text-center mb-4 mb-md-0">
+                <div class="contact-info d-flex flex-column flex-md-row justify-content-center">
+                    <div class="contact-item mx-2 mb-3 mb-md-0 border-end border-secondary pe-3">
+                        <i class="bi bi-geo-alt-fill icon text-danger"></i>
+                        <p>
+                            <span class="fw-bold">ADDRESS</span><br>
+                            Singapore Polytechnic<br>
+                            500 Dover Road<br>
+                            Singapore 139651
+                        </p>
+                    </div>
+                    <div class="contact-item mx-2 mb-3 mb-md-0 border-end border-secondary pe-3">
+                        <i class="bi bi-telephone-fill icon text-danger"></i>
+                        <p>
+                            <span class="fw-bold">PHONE</span><br>
+                            6775 1133
+                        </p>
+                    </div>
+                    <div class="contact-item mx-2 mb-3 mb-md-0 border-end border-secondary pe-3">
+                        <i class="bi bi-clock-fill icon text-danger"></i>
+                        <p>
+                            <span class="fw-bold">HOURS</span><br>
+                            Monday - Sunday<br>
+                            7am - 11pm
+                        </p>
+                    </div>
+                    <div class="contact-item mx-2 mb-3 mb-md-0">
+                        <i class="bi bi-envelope-fill icon text-danger"></i>
+                        <p>
+                            <span class="fw-bold">EMAIL ADDRESS</span><br>
+                            contactus@sp.edu.sg
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="col-12 col-md-12 col-lg-3 text-center text-md-end">
+                <div class="d-flex justify-content-center justify-content-md-end align-items-center flex-column flex-md-row">
+                    <div class="d-flex flex-column align-items-center me-md-3">
+                        <!-- First row of icons -->
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <a href="https://www.instagram.com/singaporepoly/?hl=en" class="text-white m-2">
+                                <i class="bi bi-instagram fs-3"></i>
+                            </a>
+                            <a href="https://www.facebook.com/singaporepolytechnic/" class="text-white m-2">
+                                <i class="bi bi-facebook fs-3"></i>
+                            </a>
+                            <a href="https://twitter.com/singaporepoly?lang=en" class="text-white m-2">
+                                <i class="bi bi-twitter fs-3"></i>
+                            </a>
+                        </div>
+                        <!-- Second row of icons -->
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <a href="https://t.me/s/SingaporePoly" class="text-white m-2">
+                                <i class="bi bi-telegram fs-3"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/school/singapore-polytechnic/" class="text-white m-2">
+                                <i class="bi bi-linkedin fs-3"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@singaporepoly" class="text-white m-2">
+                                <i class="bi bi-tiktok fs-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+</body>
+</html>

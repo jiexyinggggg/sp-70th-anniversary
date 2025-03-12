@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Background Styles for Body */
+body {
+    background-image: url('../images/body_background.jpg'); /* Background image URL */ /*Image taken from: https://i.pinimg.com/564x/dc/e7/2f/dce72f7a88dd7b46e21f6bf5c2f21468.jpg */
+    background-size: cover; /* Scale the image to cover the entire container */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image to prevent scrolling */
+}
+
+
+/* Navbar Styles */
+.logo-image {
+    height: 90px !important; /* Force the logo image height */
+}
+
+
+/* Navigation Bar Toggler Styles */
+.navbar-toggler {
+    border: none !important; /* Remove border from the navbar toggler */
+}
+
+
+/* Offcanvas Menu Styles */
+.offcanvas.custom-width {
+    width: 250px !important; /* Set a custom width for the offcanvas menu */
+}
+
+
+.logo-size {
+    width: 10.5rem !important; /* Set the width of the logo */
+    height: auto !important; /* Maintain aspect ratio */
+}
+
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none; /* Initially hidden */
+    z-index: 1050 !important; /* Ensure this is higher than any other element's z-index on your page */
+}
+
+
+/* Carousel Styles */
+.carou-img {
+    height: 87vh !important; /* Set the height of carousel images */
+    width: 100% !important; /* Full width */
+    object-fit: cover !important; /* Cover the container while maintaining aspect ratio */
+}
+
+
+/* Custom Card Background Color */
+.custom-card {
+    background-color: #d0e4fc !important; /* Light greyish blue background color */
+}
+
+
+/* Default positioning for mobile view (centered) */
+.carousel-control-prev {
+    left: 0 !important; /* Position the previous control to the left */
+}
+
+
+.carousel-control-next {
+    right: 0 !important; /* Position the next control to the right */
+}
+
+
+/* Tablet view adjustments */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .carousel-control-prev {
+        left: 0 !important; /* Position the previous control to the left */
+    }
+
+    .carousel-control-next {
+        right: 0 !important; /* Position the next control to the right */
+    }
+}
+
+
+/* Desktop view adjustments */
+@media (min-width: 768px) {
+    .carousel-control-prev {
+        left: -150px !important; /* Adjust the position of the previous control */
+    }
+
+    .carousel-control-next {
+        right: -150px !important; /* Adjust the position of the next control */
+    }
+}
+
+
+/* Image Profile Styles */
+.image-profile {
+    width: 100px !important; /* Set the width of profile images */
+    height: 100px !important; /* Set the height of profile images */
+    object-fit: cover !important; /* Cover the container while maintaining aspect ratio */
+}
+
+/* Divider Styles */
+.custom-divider {
+    width: 50px !important; /* Width of the divider */
+    height: 5px !important; /* Height of the divider */
+    background-color: #464646 !important; /* Divider color */
+}

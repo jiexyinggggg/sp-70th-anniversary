@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Background Styles for Body */
+body {
+    background-image: url('../images/body_background.jpg'); /* Background image URL */ /*Image taken from: https://i.pinimg.com/564x/dc/e7/2f/dce72f7a88dd7b46e21f6bf5c2f21468.jpg */
+    background-size: cover; /* Scale the image to cover the entire container */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image to prevent scrolling */
+}
+
+
+/* Navbar Styles */
+.logo-image {
+    height: 90px !important; /* Force the logo image height */
+}
+
+
+/* Navigation Bar Toggler Styles */
+.navbar-toggler {
+    border: none !important; /* Remove border from the navbar toggler */
+}
+
+
+/* Offcanvas Menu Styles */
+.offcanvas.custom-width {
+    width: 250px !important; /* Set a custom width for the offcanvas menu */
+}
+
+
+.logo-size {
+    width: 10.5rem !important; /* Set the width of the logo */
+    height: auto !important; /* Maintain aspect ratio */
+}
+
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none; /* Initially hidden */
+    z-index: 1050 !important; /* Ensure this is higher than any other element's z-index on your page */
+}
+
+
+/* Carousel Styles */
+.carou-img {
+    height: 87vh !important; /* Set the height of carousel images */
+    width: 100% !important; /* Full width */
+    object-fit: cover !important; /* Cover the container while maintaining aspect ratio */
+}
+
+
+/* Divider Styles */
+.custom-divider {
+    width: 50px !important; /* Width of the divider */
+    height: 5px !important; /* Height of the divider */
+    background-color: #464646 !important; /* Divider color */
+}
+
+
+/* Countdown Timer Section */
+#countdown-section .bg-light,
+#countdown-section .countdown-box {
+    border-radius: 1rem !important; /* Rounded corners for both */
+}
+
+
+#countdown-section .bg-light {
+    background-color: rgba(208, 168, 143, 0.7) !important; /* Light background */
+}
+
+
+#countdown-section .countdown-box {
+    height: 250px !important; /* Fixed height */
+    padding: 10px !important; /* Padding for background visibility */
+    background-color: #decabc !important; /* Background color */
+}
+
+
+.countdown-separator {
+    font-size: 3rem; /* Font size for separators */
+    line-height: 2rem; /* Line height to align with boxes */
+}
+
+
+/* Font Color for Countdown Numbers */
+#countdown-section .countdown-box h3 {
+    font-size: 5.5rem !important; /* Font size */
+    color: #001b45 !important; /* Font color */
+}
+
+
+/* Anniversary Details Section */
+.custom-event-details {
+    background-color: rgba(162, 133, 101, 0.6) !important; /* Background color with transparency */
+}
+
+
+/* Cursor Pointer for SP70 Shirt Design Cards */
+.cursor-pointer {
+    cursor: pointer !important; /* Pointer cursor */
+}
+
+
+/* SP70 Moments Card Styles */
+.card-front, .card-back {
+    max-height: 30dvh !important; /* Maximum height for cards */
+    overflow: hidden !important; /* Hidden overflow for front */
+}
+
+
+.card-back {
+    overflow: auto !important; /* Scrollable back */
+}
+
+
+/* Quiz Styles */
+.custom-bg, .question-box {
+    background-color: #deccbe !important; /* Background color for quiz sections */
+}
+
+
+.question, .question-row {
+    max-width: 800px !important; /* Maximum width for questions */
+}
+
+
+#questionImage {
+    max-width: 100% !important; /* Maximum width for question image */
+    height: auto !important; /* Maintain aspect ratio */
+}
+
+
+#question-number {
+    background-color: #cda5a5 !important; /* Background color */
+    color: #ffffff !important; /* Font color */
+}
+
+
+.question-container {
+    background-color: #c9a5a5 !important; /* Background color */
+}
+
+
+.answer-btn {
+    background-color: #ffffff !important; /* Default background */
+    color: #ad7d7d !important; /* Default font color */
+    border-color: #cda5a5 !important; /* Default border color */
+}
+
+
+.answer-btn:hover {
+    background-color: #a57e7e !important; /* Background color on hover */
+    color: #ffffff !important; /* Font color on hover */
+}
+
+
+.answer-btn.selected,
+.answer-btn.correct,
+.answer-btn.incorrect {
+    color: #ffffff !important; /* Font color for selected, correct, incorrect */
+}
+
+
+.answer-btn.selected {
+    background-color: #cda5a5 !important; /* Selected background color */
+}
+
+
+.answer-btn.correct {
+    background-color: #28a745 !important; /* Correct answer background */
+    border-color: #28a745 !important; /* Correct answer border */
+}
+
+
+.answer-btn.incorrect {
+    background-color: #dc3545 !important; /* Incorrect answer background */
+    border-color: #dc3545 !important; /* Incorrect answer border */
+}
+
+
+#next-btn, #previous-btn, #submit-btn,
+#start-btn {
+    background-color: #cda5a5 !important; /* Default button background */
+    border-color: #777777; /* Border color */
+    color: #ffffff !important; /* Font color */
+}
+
+
+#next-btn:hover, #previous-btn:hover, #submit-btn:hover,
+#start-btn:hover {
+    background-color: #a57e7e !important; /* Background color on hover */
+    border-color: #a57e7e; /* Border color on hover */
+}

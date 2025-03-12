@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/form.js" defer></script>
+    <title>Form</title>
+</head>
+<body>
+
+<!-- Start of Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-4" href="https://www.sp.edu.sg/sp70">
+            <img src="../images/sp70_navbar_logo.png" alt="SP70 Logo" class="img-fluid" style="height: 90px;"> <!-- Image taken from: https://www.sp.edu.sg/images/default-source/default-album/sp70-logo-550px.jpg -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto pe-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/milestones.html">Milestones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/form.html">Messages</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End of Navigation Bar -->
+
+<!-- Page content starts after the fixed navbar -->
+<div class="mt-5 pt-5"></div>
+
+<!-- Scroll to Top Button -->
+<button type="button" class="btn btn-secondary position-fixed bottom-0 end-0 mb-3 me-3" id="scrollToTopBtn">
+    <span class="d-flex align-items-center">
+        <span class="me-2">Back To Top</span>
+        <i class="bi bi-arrow-up"></i>
+    </span>
+</button>
+
+<!-- Start of Offcanvas Menu -->
+<div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 250px;">
+    <div class="offcanvas-header">
+        <a href="https://www.sp.edu.sg/">
+            <img src="../images/offcanvas_and_footer_sp_logo.png" alt="Logo" class="img-fluid" style="width: 10.5rem; height: auto;">
+        </a>
+        <!-- Image taken from: https://www.sp.edu.sg/images/default-source/default-album/sp-logo-footer.png?sfvrsn=59de64e6_4 -->
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill me-2" viewBox="0 0 16 16">
+                        <path d="M8.354 1.146a.5.5 0 0 1 .292.103l6 5A.5.5 0 0 1 14.5 7.5H13v5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3H7v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-5H1.5a.5.5 0 0 1-.646-.793l6-5a.5.5 0 0 1 .5 0zM7.5 10v4h1v-4h-1z"/>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="../html/milestones.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill me-2" viewBox="0 0 16 16">
+                        <path d="M14.778 2.257a.5.5 0 0 0-.5-.514h-8.18a1.5 1.5 0 0 1-1.1-.407L4.1.564A1.5 1.5 0 0 0 3.002 0H2.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 1 0V8.514h.748l.498.58c.184.214.453.343.754.342h8.78a.5.5 0 0 0 .5-.514L14.778 2.257zM2.5 1h.501a.5.5 0 0 1 .374.18l.498.58H2.5V1z"/>
+                    </svg>
+                    Milestones
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="../html/form.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill me-2" viewBox="0 0 16 16">
+                        <path d="M2 15.5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.5a1 1 0 0 1-1 1H6.414L4.707 13.707a1 1 0 0 1-1.414 0L2 15.5zm4-10.5a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                    </svg>
+                    Messages
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- End of Offcanvas Menu -->
+
+<!-- Start of Form Section -->
+<div class="d-flex justify-content-center align-items-center pt-5 pb-5 flex-grow-1 form-container">
+    <div class="container shadow p-4 rounded-4 custom-container">
+        <h1 class="fs-4 mb-4 text-center fw-bold">Please fill out this form and leave your personal wishes or messages for SP70 below!</h1>
+
+        <!-- Form Banner Image -->
+        <div class="text-center mb-4">
+            <img src="../images/form_banner.png" alt="form banner" class="img-fluid"> <!-- Image taken from: https://www.youtube.com/watch?v=rLuXF4zBsTg -->
+        </div>
+
+        <form id="messageForm" class="needs-validation" novalidate>
+            <div class="row g-1">
+
+                <!-- Progress Bar -->
+                <div class="progress mb-4" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 20%; background-color: #5bc0de;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <!-- Name Field -->
+                <div class="col-12 mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <div class="input-group rounded-pill">
+                        <span class="input-group-text bg-white border-2" id="basic-addon1">
+                            <i class="bi bi-person"></i>
+                        </span>
+                        <input class="form-control border-2 rounded-pill-end" type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                </div>
+
+                <!-- Email Address Field -->
+                <div class="col-12 mb-3">
+                    <label class="form-label" for="emailAddress">Email Address</label>
+                    <div class="input-group rounded-pill">
+                        <span class="input-group-text bg-white border-2" id="basic-addon2">
+                            <i class="bi bi-envelope"></i>
+                        </span>
+                        <input class="form-control border-2 rounded-pill-end" type="email" id="emailAddress" name="emailAddress" placeholder="Enter your email address" required>
+                        <div class="invalid-feedback" id="emailMissingFeedback">Please enter your email address.</div>
+                        <div class="invalid-feedback" id="emailFormatFeedback" style="display:none;">Please enter a valid email address.</div>
+                    </div>
+                </div>
+
+                <!-- Student Status Radio Buttons -->
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label class="form-label">Are you a prospective, current, or former student of Singapore Polytechnic?</label>
+                        <div class="btn-group w-100" role="group" aria-label="Student Status">
+                            <div class="d-inline gap-1 d-md-block">
+                                <input type="radio" class="btn-check" name="studentStatus" id="statusYes" value="Yes" required>
+                                <label class="btn btn-outline-secondary rounded-start mb-0" for="statusYes">Yes</label>
+
+                                <input type="radio" class="btn-check" name="studentStatus" id="statusNo" value="No" required>
+                                <label class="btn btn-outline-secondary rounded-end mb-0" for="statusNo">No</label>
+
+                                <div class="invalid-feedback">Please select your student status.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gender Radio Buttons -->
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label class="form-label">Gender (Optional)</label>
+                        <div class="btn-group w-100 d-flex" role="group" aria-label="Gender">
+                            <input type="radio" class="btn-check" name="gender" id="female" value="Female">
+                            <label class="btn btn-outline-secondary rounded-start mb-0" for="female">Female</label>
+
+                            <input type="radio" class="btn-check" name="gender" id="male" value="Male">
+                            <label class="btn btn-outline-secondary mb-0" for="male">Male</label>
+
+                            <input type="radio" class="btn-check" name="gender" id="others" value="Others">
+                            <label class="btn btn-outline-secondary rounded-end mb-0" for="others">Others</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Age Select and Upload Photo -->
+                <div class="row align-items-start">
+                    <!-- Age Section -->
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3 position-relative">
+                            <label class="form-label" for="age">Age</label>
+                            <select class="form-select rounded-pill bg-light border-secondary focus:border-success focus:ring-success" id="age" name="age" required>
+                                <option value="">Select your age range</option>
+                                <option value="16 or below">16 or below</option>
+                                <option value="17-24">17-24</option>
+                                <option value="25-34">25-34</option>
+                                <option value="35-44">35-44</option>
+                                <option value="45-54">45-54</option>
+                                <option value="55-64">55-64</option>
+                                <option value="65 or over">65 or over</option>
+                            </select>
+                            <div class="invalid-feedback position-absolute" style="bottom: -1.5rem; left: 0;">Please select your age range.</div>
+                        </div>
+                    </div>
+
+                    <!-- Upload Photo Section -->
+                    <div class="col-12 col-md-6 d-flex align-items-end">
+                        <div class="mb-3 w-100">
+                            <label class="form-label d-flex align-items-center" for="uploadPhoto">
+                                <span>Upload a Photo (Optional)</span>
+                                <!-- Question mark icon -->
+                                <i class="bi bi-question-circle ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="For current students and alumni, please feel free to share a photo of your favourite memory in SP!"></i>
+                            </label>
+                            <div class="input-group rounded-pill">
+                                <label class="input-group-text bg-white border-2 rounded-pill-start" for="uploadPhoto">
+                                    <i class="bi bi-camera"></i>
+                                </label>
+                                <input type="file" class="form-control border-2 rounded-pill-end" id="uploadPhoto" name="uploadPhoto" accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Textarea -->
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control w-100 border-2" id="message" name="message" rows="4" placeholder="Drop your wishes or messages here" required></textarea>
+                        <div class="invalid-feedback">Please enter your message.</div>
+                    </div>
+                </div>
+
+                <!-- Checkbox for Form Submission Confirmation -->
+                <div class="col-12">
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="customCheckbox" name="customCheckbox" required>
+                            <label class="form-check-label" for="customCheckbox">Confirm Form Submission</label>
+                            <div class="invalid-feedback">Please click this checkbox to confirm form submission.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Buttons -->
+                <div class="col-12 d-flex justify-content-end gap-2">
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- End of Form Section -->
+
+<!-- Successful Form Submission Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0">
+            <div class="modal-body text-center p-5 bg-light">
+                
+                <!-- Original Content -->
+                <div id="originalContent">
+                    <div class="display-1 text-success mb-4">
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <h5 class="modal-title mb-4" id="successModalLabel">Thank you!</h5>
+                    <p>Form submitted successfully. Thank you for taking the time to fill out this form!</p>
+                    <button type="button" class="btn btn-secondary mt-4" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary mt-4 ms-2" id="rateWebsiteButton">Rate Our Website</button>
+                </div>
+
+                <!-- Star Rating Section (initially hidden) -->
+                <div id="starRatingSection" class="text-center mb-4 d-none">
+                    <h5 class="mb-3">Please rate and share your thoughts about our website below!</h5>
+                    <p class="mb-0">Your feedback and opinion are valuable to us. Let us know how we can improve your experience!</p>
+                    
+                    <!-- Star Rating -->
+                    <div id="starRating" class="d-inline-flex mb-3">
+                        <i class="bi bi-star star" data-value="1" style="font-size: 2.5rem; margin: 0 0.1rem;"></i>
+                        <i class="bi bi-star star" data-value="2" style="font-size: 2.5rem; margin: 0 0.1rem;"></i>
+                        <i class="bi bi-star star" data-value="3" style="font-size: 2.5rem; margin: 0 0.1rem;"></i>
+                        <i class="bi bi-star star" data-value="4" style="font-size: 2.5rem; margin: 0 0.1rem;"></i>
+                        <i class="bi bi-star star" data-value="5" style="font-size: 2.5rem; margin: 0 0.1rem;"></i>
+                    </div>
+
+                    <!-- Message Textarea -->
+                    <div class="mb-3 text-start">
+                        <label class="form-label" for="message">Do you have any thoughts you would like to share?</label>
+                        <textarea class="form-control w-100 border-2" id="message" name="message" rows="4" placeholder="Add a comment..."></textarea>
+                    </div>
+                    
+                    <div id="ratingMessage" class="mb-3 text-danger"></div>
+                    
+                    <!-- Buttons -->
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary me-2" id="closeRatingSection">Close</button>
+                        <button type="button" class="btn btn-primary" id="submitFeedback">Submit Feedback</button>
+                    </div>
+                </div>
+
+                <!-- Feedback Submission Confirmation (initially hidden) -->
+                <div id="feedbackConfirmation" class="d-none">
+                    <div class="display-1 text-warning mb-4">
+                        <i class="bi bi-stars"></i>
+                    </div>
+                    <h5 class="modal-title mb-4">Thank you for your feedback!</h5>
+                    <p>We appreciate your feedback and will use it to improve our website.</p>
+                    <button type="button" class="btn btn-secondary mt-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Error Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0">
+            <div class="modal-body text-center p-5 bg-light">
+                
+                <!-- Error Content -->
+                <div id="errorContent">
+                    <div class="display-1 text-danger mb-4">
+                        <i class="bi bi-x-circle-fill"></i>
+                    </div>
+                    <h5 class="modal-title mb-4" id="errorModalLabel">Oops!</h5>
+                    <p>Submission error, it looks like some required fields are missing or filled out incorrectly. Please correct the issues and try again.</p>
+                    <button type="button" class="btn btn-primary mt-4" id="tryAgainButton">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Start of footer -->
+<footer class="bg-dark text-white py-4 mt-0">
+    <div class="container">
+        <div class="row">
+
+        <!-- SP Logo and Copyright -->
+        <div class="col-12 col-md-4 col-lg-3 text-center mb-2 d-flex align-items-center justify-content-center" style="height: 100px;"> <!-- Adjust height as needed -->
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <!-- SP Logo -->
+                <a href="https://www.sp.edu.sg/">
+                    <img src="../images/offcanvas_and_footer_sp_logo.png" alt="SP Logo" class="img-fluid mt-1 w-50">
+                </a>
+                <!-- Image taken from: https://www.sp.edu.sg/images/default-source/default-album/sp-logo-footer.png?sfvrsn=59de64e6_4 -->                    
+                <!-- Copyright -->
+                <span class="mt-2">© 2024 Yip Jayying</span>
+            </div>
+        </div>
+
+            <!-- Contact Information -->
+            <div class="col-12 col-md-8 col-lg-6 text-center mb-3 mb-md-0">
+                <div class="contact-info d-flex flex-column flex-md-row justify-content-center">
+                    <div class="contact-item mx-2 border-end border-secondary pe-3">
+                        <i class="bi bi-geo-alt-fill icon text-danger"></i>
+                        <p>
+                            <span class="fw-bold">ADDRESS</span><br>Singapore Polytechnic<br>500 Dover Road<br>Singapore 139651
+                        </p>
+                    </div>
+                    <div class="contact-item mx-2 border-end border-secondary pe-3">
+                        <i class="bi bi-telephone-fill icon text-danger"></i>
+                        <p>
+                            <span class="fw-bold">PHONE</span><br>6775 1133
+                        </p>
+                    </div>
+                    <div class="contact-item mx-2 border-end border-secondary pe-3">
+                        <i class="bi bi-clock-fill icon text-danger"></i>
+                        <p>
+                            <span class="fw-bold">HOURS</span><br>Monday - Sunday<br>7am - 11pm
+                        </p>
+                    </div>
+                    <div class="contact-item mx-2">
+                        <i class="bi bi-envelope-fill icon text-danger"></i>
+                        <p>
+                            <span class="fw-bold">EMAIL ADDRESS</span><br>contactus@sp.edu.sg
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Media Icons -->
+            <div class="col-12 col-md-12 col-lg-3 text-center text-md-end">
+                <div class="d-flex justify-content-center justify-content-md-end align-items-center flex-column flex-md-row">
+                    <div class="d-flex flex-column align-items-center me-md-3">
+                        <!-- First row of icons -->
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.instagram.com/singaporepoly/?hl=en" class="text-white m-2"><i class="bi bi-instagram fs-3"></i></a>
+                            <a href="https://www.facebook.com/singaporepolytechnic/" class="text-white m-2"><i class="bi bi-facebook fs-3"></i></a>
+                            <a href="https://twitter.com/singaporepoly?lang=en" class="text-white m-2"><i class="bi bi-twitter fs-3"></i></a>
+                        </div>
+                        <!-- Second row of icons -->
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.linkedin.com/school/singapore-polytechnic/" class="text-white m-2"><i class="bi bi-linkedin fs-3"></i></a>
+                            <a href="https://www.youtube.com/user/SingaporePolytechnic" class="text-white m-2"><i class="bi bi-youtube fs-3"></i></a>
+                            <a href="https://www.tiktok.com/@singaporepoly" class="text-white m-2"><i class="bi bi-tiktok fs-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+</body>
+</html>
